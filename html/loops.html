@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial, Sum, and Average</title>
+</head>
+<body>
+
+<h1>Factorial, Sum, and Average of First N Natural Numbers</h1>
+<div class="container">
+    <select id="calculationType" class="dropdown">
+        <option value="Factorial">Factorial</option>
+        <option value="Sum">Sum</option>
+        <option value="Average">Average</option>
+    </select>
+    <input id="nlimit" type="number" min="1" placeholder="Enter a number" />
+    <button onclick="calculateResults()">Calculate</button>
+    <div class="result">
+        <h3 id="resultTitle"></h3>
+        <p id="result"></p>
+    </div>
+</div>
+<a href="../index.html">Back to Home Page!</a>
+
+<link rel="stylesheet" href="../css/loops.css">
+<script src="../js/loops.js"></script>
+
+</body>
+</html>
