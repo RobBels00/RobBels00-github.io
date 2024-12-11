@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Payroll</title>
+    <link rel="stylesheet" href="../css/payroll.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Payroll</h1>
+
+        <form id="payrollForm">
+            <input type="text" id="employeeName" placeholder="Employee Name" required>
+            <input type="number" id="daysWorked" placeholder="Days Worked" required>
+            <input type="number" id="dailyRate" placeholder="Daily Rate" required>
+            <input type="number" id="deduction" placeholder="Deduction" required>
+            <button type="button" onclick="addEmployee()">Submit</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee No.</th>
+                    <th>Employee Name</th>
+                    <th>Days Worked</th>
+                    <th>Daily Rate</th>
+                    <th>Gross Pay</th>
+                    <th>Deduction</th>
+                    <th>Net Pay</th>
+                </tr>
+            </thead>
+            <tbody id="payrollTableBody">
+                <!-- Rows will be added dynamically here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="total">Total:</td>
+                    <td id="totalGrossPay">0.00</td>
+                    <td id="totalDeduction">0.00</td>
+                    <td id="totalNetPay">0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div>
+            <input type="number" id="employeeNumber" placeholder="Enter Emp. No.">
+            <button type="button" onclick="editEmployee()">Edit</button>
+            <button type="button" onclick="deleteEmployee()">Delete</button>
+            <button type="button" onclick="deleteAllEmployees()">Delete All</button>
+        </div>
+
+        <div class="footer">
+            <a href="../front_page.html">Back to Home Page!</a>
+        </div>
+    </div>
+
+    <script src="../js/payroll.js"></script>
+</body>
+</html>

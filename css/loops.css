@@ -1,0 +1,64 @@
+
+        title 
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f4f8;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            background-color: #e8f5e9;
+            padding: 20px;
+            margin: auto;
+            width: 40%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            width: 80%;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .result {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+    
